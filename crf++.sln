@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crf++", "crf++\crf++.vcxproj", "{4AAA9846-8E3F-4DC2-9F15-AA63168EE820}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crf_test", "crf_test\crf_test.vcxproj", "{CBD651C7-3CCA-4D4B-B84F-FBEBD4A96449}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AAA9846-8E3F-4DC2-9F15-AA63168EE820}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4AAA9846-8E3F-4DC2-9F15-AA63168EE820}.Debug|Win32.Build.0 = Debug|Win32
+		{4AAA9846-8E3F-4DC2-9F15-AA63168EE820}.Release|Win32.ActiveCfg = Release|Win32
+		{4AAA9846-8E3F-4DC2-9F15-AA63168EE820}.Release|Win32.Build.0 = Release|Win32
+		{CBD651C7-3CCA-4D4B-B84F-FBEBD4A96449}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBD651C7-3CCA-4D4B-B84F-FBEBD4A96449}.Debug|Win32.Build.0 = Debug|Win32
+		{CBD651C7-3CCA-4D4B-B84F-FBEBD4A96449}.Release|Win32.ActiveCfg = Release|Win32
+		{CBD651C7-3CCA-4D4B-B84F-FBEBD4A96449}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

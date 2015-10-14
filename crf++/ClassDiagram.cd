@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CRFPP::CRFEncoderThread" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAIAAAAIAAQEAACAAAAAAAAQBAAAAAAQA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\encoder.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::string_buffer" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\common.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::die" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAgAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\common.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::wlog" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\common.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Tagger" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iEABBCAAgACgAAAMBKAAhEACggADCAAAEKB4AAIHoAs=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\crfpp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Model" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAABCAAAAAACAAAAAAAAAAQIAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\crfpp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Encoder" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAACAgAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\encoder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::FeatureCache" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAIAAAAAAAAAAAAAAAAAAAAACAgAAEAAACAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\feature_cache.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::TaggerImpl" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="CRFPP::TaggerImpl::QueueElement" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\tagger.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Class Name="CRFPP::TaggerImpl::QueueElementComp" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\tagger.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="CRFPP::TaggerImpl::__unnamed_enum_002c_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\tagger.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>iUwhBKUCgICiQACMRKAChGIihgsTCBwAiLV8ABIHoAs=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\tagger.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Allocator" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CFCAAAAAAAAAAAAACggAAAQAAAAAAAIAAgEAABAAAQQ=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\feature_index.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::FeatureIndex" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAApBGEIAACKABCIAoAAEAQAAAAAQCAMBAAwAAAAIAg=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\feature_index.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::EncoderFeatureIndex" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAASAgACAAiAAAAAAAAAAAAIAAAAEAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\feature_index.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::DecoderFeatureIndex" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAABAAAACAACAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\feature_index.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Length&lt;T&gt;" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\freelist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::charLength" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\freelist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::FreeList&lt;T, LengthFunc&gt;" Collapsed="true">
+    <Position X="8.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgKAAAAhAAIACIAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\freelist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::LBFGS" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkQEAACAAAAAYAAGAABFAAAYAAAAADIgQAAQABAAAFg=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\lbfgs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Mmap&lt;T&gt;" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAECAACAAAQAAOAAAAESAAEgAAAICMAAAAABABA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\mmap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Param" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAACsAAIiAAAAQACQIQAAAogAAAAAAAAIAAQAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\param.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::scoped_ptr&lt;T&gt;" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAEAAAAAAAAAgBAQgAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\scoped_ptr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::scoped_fixed_array&lt;T, N&gt;" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAoAEQgBAEAEAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\scoped_ptr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::scoped_array&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAQAAAAgAAQgAAAAUAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\scoped_ptr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::scoped_string" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\scoped_ptr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::istream_wrapper" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAACAAAAQgAAAAAAAAAAQAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\stream_wrapper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::ostream_wrapper" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAQgAAAAAAAAQAAAEgAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\stream_wrapper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::ModelImpl" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIFEABCAAAAAACAAgAAAgAQAQIAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\tagger.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::thread" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAgAAAIAACAAAAAIIAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\thread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::timer" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAQAAAAAAAAAAQAAAAQAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\timer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::progress_timer" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\timer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Darts::Length&lt;T&gt;" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\darts.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Darts::Length&lt;char&gt;" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\darts.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRFPP::Darts::DoubleArrayImpl&lt;node_type_, node_u_type_, array_type_, array_u_type_, length_func_&gt;" Collapsed="true">
+    <Position X="4.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gsAAEgIAAADgAAEABKkQAAJDAAAAoCEAAYAQAAAKAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\darts.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="`anonymous-namespace'::CommandLine" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgAAAAAQABAAAIAAAAAAAAAAAAAAEAAAAAAAAAAAAQ=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\winmain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="CRFPP::whatlog" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAABAAAEAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\common.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CRFPP::Path" Collapsed="true">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAAAAAIAAAAAoAAAAAAAAAAAIQAAAAAAAAAAACAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\path.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CRFPP::Node" Collapsed="true">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAAAA0IAAAAAAAAAAABAAAAAAQAAAAABB0AAEABAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\node.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CRFPP::Option" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAgAAAAAAAAAAIAAAAAAAAAAEAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\param.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="crfpp_t" Collapsed="true">
+    <Position X="14.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\crfpp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="crfpp_model_t" Collapsed="true">
+    <Position X="12.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\crfpp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="CRFPP::Darts::DoubleArray" Collapsed="true">
+    <Position X="4.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\darts.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="CRFPP::StrFreeList" Collapsed="true">
+    <Position X="8.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\freelist.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="CRFPP::const_Path_iterator" Collapsed="true">
+    <Position X="11" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\liyunkai\Documents\Visual Studio 2013\Projects\crf++\cpp\path.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
