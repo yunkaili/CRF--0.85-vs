@@ -15,6 +15,8 @@
 namespace CRFPP {
 
 //	A child class of class vector, owning its own feature_list storing
+//	*this	-	vector memory stores the head pointer of every tag
+//	feature_freelist_	-	position of feature
 //	void add(const std::vector<int> &)	-	adding features into its parent vector array
 //	void shrink(std::map<int, int> *);	-	
 class FeatureCache: public std::vector <int *> {

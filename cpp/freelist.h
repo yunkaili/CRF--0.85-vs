@@ -24,15 +24,15 @@ class charLength {
 };
 
 //	Variables
-//	std::vector <T *> freeList;	
-//	size_t pi;	-	size of used memory
-//	size_t li;	-	index of 
-//	size_t size;-	total size of memory
+//	std::vector <T *> freeList;	-	block memory array
+//	size_t pi;		-	size of used memory
+//	size_t li;		-	index of block memory
+//	size_t size;	-	total size of memory
 //
 //	Functions:
-//	T* alloc(size_t len = 1)	-	allocate memory with the size(size_t len) and return its header
+//	T* alloc(size_t len = 1)		-	allocate memory with the size(size_t len) and return its header
 //	T* dup(T *src, size_t len = 0)	-	allocate memory and copy the src on it
-//	void set_size(size_t n)	- set memory size to n
+//	void set_size(size_t n)			-	set memory size to n
 template <class T, class LengthFunc = Length<T> >
 class FreeList {
  private:
@@ -50,7 +50,7 @@ class FreeList {
       pi = 0;
     }
     if (li == freeList.size()) {	// check if memory overflows(if li will be added one)
-      freeList.push_back(new T[size]);	// allocating a
+      freeList.push_back(new T[size]);	// allocating a block of memory
     }
     T* r = freeList[li] + pi;
     pi += len;

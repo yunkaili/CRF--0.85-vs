@@ -81,7 +81,7 @@ class CRFEncoderThread: public thread {
     obj = 0.0;
     err = zeroone = 0;
     std::fill(expected.begin(), expected.end(), 0.0);
-    for (size_t i = start_i; i < size; i += thread_num) {
+    for (size_t i = start_i; i < size; i += thread_num) {	// go through all the sentence
       obj += x[i]->gradient(&expected[0]);
       int error_num = x[i]->eval();
       err += error_num;
@@ -199,7 +199,10 @@ bool runCRF(const std::vector<TaggerImpl* > &x,
             double eta,
             unsigned short shrinking_size,
             unsigned short thread_num,
-            bool orthant) {
+            bool orthant) {	// false -> CRF_L2; true -> CRF_L1
+ 
+	thread_num = 1;
+	
   double old_obj = 1e+37;
   int    converge = 0;
   LBFGS lbfgs;

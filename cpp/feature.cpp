@@ -133,12 +133,12 @@ void FeatureIndex::rebuildFeatures(TaggerImpl *tagger) const {
   for (size_t cur = 0; cur < tagger->size(); ++cur) {
     const int *f = (*feature_cache)[fid++];
     for (size_t i = 0; i < y_.size(); ++i) {
-      Node *n = allocator->newNode(thread_id);
+      Node *n = allocator->newNode(thread_id);	// Allocator::node_freelist_
       n->clear();
       n->x = cur;
       n->y = i;
       n->fvector = f;
-      tagger->set_node(n, cur, i);
+      tagger->set_node(n, cur, i);	// creating node TaggerImpl::node_
     }
   }
 
@@ -146,9 +146,9 @@ void FeatureIndex::rebuildFeatures(TaggerImpl *tagger) const {
     const int *f = (*feature_cache)[fid++];
     for (size_t j = 0; j < y_.size(); ++j) {
       for (size_t i = 0; i < y_.size(); ++i) {
-        Path *p = allocator->newPath(thread_id);
+        Path *p = allocator->newPath(thread_id);	// Allocator::path_freelist_
         p->clear();
-        p->add(tagger->node(cur - 1, j),
+        p->add(tagger->node(cur - 1, j),	// setup left node and right node
                tagger->node(cur,     i));
         p->fvector = f;
       }
@@ -164,7 +164,7 @@ bool FeatureIndex::buildFeatures(TaggerImpl *tagger) const {
   std::vector<int> feature;
 
   FeatureCache *feature_cache = tagger->allocator()->feature_cache();
-  tagger->set_feature_id(feature_cache->size());
+  tagger->set_feature_id(feature_cache->size());	// feature_id start of the feature location
 
   // unigram feature
   for (size_t cur = 0; cur < tagger->size(); ++cur) {	// iterate every tag
