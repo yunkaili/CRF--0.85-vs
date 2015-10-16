@@ -12,11 +12,17 @@
 
 namespace CRFPP {
 
+//alpha_t =	log( sum( exp(alpha_t-1) * feature_function_sum))
+//		  =	log( sum( exp(alpha_t-1) * exp(uni-gram + bi-gram)))
+//		  =	log( sum( exp(alpha_t-1 + bi-gram + uni-gram))	// though iterate each path from left, uni-gram cost remains the same
+//		  =	log( sum( exp(alpha_t-1 + bi-gram)) * exp(uni-gram))
+//		  =	log( sum(exp(alpha_t-1 + bi-gram)) + uni-gram
+//		  =	logsumexp( sum((*it)->cost + (*it)->lnode->alpha)) + cost
 void Node::calcAlpha() {
   alpha = 0.0;
   for (const_Path_iterator it = lpath.begin(); it != lpath.end(); ++it) {
     alpha = logsumexp(alpha,
-                      (*it)->cost +(*it)->lnode->alpha,
+                      (*it)->cost +(*it)->lnode->alpha,	
                       (it == lpath.begin()));
   }
   alpha += cost;

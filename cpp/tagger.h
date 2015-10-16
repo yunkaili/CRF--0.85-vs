@@ -53,7 +53,7 @@ class ModelImpl : public Model {
   scoped_ptr<DecoderFeatureIndex> feature_index_;
 };
 
-// including  Allocator
+//	including  Allocator which caches chars, nodes, path and templates
 class TaggerImpl : public Tagger {
  public:
   explicit TaggerImpl() : mode_(TEST), vlevel_(0), nbest_(0),
@@ -180,6 +180,8 @@ class TaggerImpl : public Tagger {
  private:
   void forwardbackward();
   void viterbi();
+//setup nodes and connections among them
+//	calculate cost at the first
   void buildLattice();
   bool initNbest();
   bool add2(size_t, const char **, bool);

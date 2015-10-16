@@ -505,10 +505,13 @@ const char *FeatureIndex::getTemplate() const {
   return templs_.c_str();
 }
 
+// uni-gram feature function cost
 void FeatureIndex::calcCost(Node *n) const {
   n->cost = 0.0;
 
-#define ADD_COST(T, A)                                                  \
+//	*f has a sentinel value -1
+//	added by void FeatureCache::add(const std::vector<int> &f)
+#define ADD_COST(T, A)														  \
   do { T c = 0;                                                               \
     for (const int *f = n->fvector; *f != -1; ++f) { c += (A)[*f + n->y];  }  \
     n->cost =cost_factor_ *(T)c; } while (0)
@@ -528,7 +531,7 @@ void FeatureIndex::calcCost(Path *p) const {
   { T c = 0.0;                                                  \
     for (const int *f = p->fvector; *f != -1; ++f) {            \
       c += (A)[*f + p->lnode->y * y_.size() + p->rnode->y];     \
-    }                                                           \
+    }   /* y_.size() * y_.size() (p->lnode->y, p->rnode->y) */  \
     p->cost =cost_factor_*(T)c; }
 
   if (alpha_float_) {

@@ -14,6 +14,7 @@
 namespace CRFPP {
 struct Node;
 
+// using as the connection between two nodes
 struct Path {
   Node      *rnode;
   Node      *lnode;

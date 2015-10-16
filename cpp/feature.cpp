@@ -130,6 +130,7 @@ void FeatureIndex::rebuildFeatures(TaggerImpl *tagger) const {
   allocator->clear_freelist(thread_id);
   FeatureCache *feature_cache = allocator->feature_cache();
 
+  // node_ size [(sequence lenghth) * (# of state type)]	[tagger->size() * y_.size()]
   for (size_t cur = 0; cur < tagger->size(); ++cur) {
     const int *f = (*feature_cache)[fid++];
     for (size_t i = 0; i < y_.size(); ++i) {
@@ -148,7 +149,7 @@ void FeatureIndex::rebuildFeatures(TaggerImpl *tagger) const {
       for (size_t i = 0; i < y_.size(); ++i) {
         Path *p = allocator->newPath(thread_id);	// Allocator::path_freelist_
         p->clear();
-        p->add(tagger->node(cur - 1, j),	// setup left node and right node
+        p->add(tagger->node(cur - 1, j),	// setup connection between two nodes
                tagger->node(cur,     i));
         p->fvector = f;
       }
@@ -166,8 +167,9 @@ bool FeatureIndex::buildFeatures(TaggerImpl *tagger) const {
   FeatureCache *feature_cache = tagger->allocator()->feature_cache();
   tagger->set_feature_id(feature_cache->size());	// feature_id start of the feature location
 
-  // unigram feature
-  for (size_t cur = 0; cur < tagger->size(); ++cur) {	// iterate every tag
+  // uni-gram feature
+  int _tagger_size = tagger->size();
+  for (size_t cur = 0; cur < _tagger_size/*tagger->size()*/; ++cur) {	// iterate every tag
     for (std::vector<std::string>::const_iterator it	// extract every feature at each tag
              = unigram_templs_.begin();
          it != unigram_templs_.end(); ++it) {
@@ -180,7 +182,7 @@ bool FeatureIndex::buildFeatures(TaggerImpl *tagger) const {
     feature.clear();
   }
 
-  // bigram feature
+  // bi-gram feature
   for (size_t cur = 1; cur < tagger->size(); ++cur) {
     for (std::vector<std::string>::const_iterator
              it = bigram_templs_.begin();

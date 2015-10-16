@@ -488,10 +488,10 @@ void TaggerImpl::buildLattice() {
 
   for (size_t i = 0; i < x_.size(); ++i) {
     for (size_t j = 0; j < ysize_; ++j) {
-      feature_index_->calcCost(node_[i][j]);
+      feature_index_->calcCost(node_[i][j]);	// uni-gram feature cost
       const std::vector<Path *> &lpath = node_[i][j]->lpath;
       for (const_Path_iterator it = lpath.begin(); it != lpath.end(); ++it) {
-        feature_index_->calcCost(*it);
+        feature_index_->calcCost(*it);		// bi-gram feature cost
       }
     }
   }

@@ -23,11 +23,11 @@
 namespace CRFPP {
 class TaggerImpl;
 
-//	Store path, node and char
-//	char *strdup(const char *str);	-	copy string into char_freelist_
-//	Path *newPath(size_t thread_id);-	
-//	Node *newNode(size_t thread_id);-
-//  FeatureCache *feature_cache() const;	-	returning pointer of feature_cache_
+//Store path, node and char
+//char *strdup(const char *str);	-	copy string into char_freelist_
+//Path *newPath(size_t thread_id);	-	
+//Node *newNode(size_t thread_id);	-	
+//FeatureCache *feature_cache() const;	-	returning pointer of feature_cache_
 class Allocator {
  public:
   explicit Allocator(size_t thread_num);
@@ -53,17 +53,15 @@ class Allocator {
 };
 
 //	Variables
-//	std::vector<std::string>  unigram_templs_;	-	uni-gram templates
-//	std::vector<std::string>  bigram_templs_;	-	bi-gram templates
-//	std::vector<std::string>  y_;	-	list of labels
-//	std::string               templs_;	-	feature templates
+//std::vector<std::string>	unigram_templs_;	-	uni-gram templates
+//std::vector<std::string>	bigram_templs_;		-	bi-gram templates
+//std::vector<std::string>	y_;					-	list of labels
+//std::string				templs_;			-	feature templates
 //
-//	Functions
-//	bool buildFeatures(TaggerImpl *tagger) const;	-	extract feature
-//	void rebuildFeatures(TaggerImpl *tagger) const;
-//	bool applyRule(string_buffer *os,
-//		const char *pattern,
-//		size_t pos, const TaggerImpl &tagger) const;	-	extract feature at a node
+//Functions
+//bool buildFeatures(TaggerImpl *tagger) const;		-	extract feature
+//void rebuildFeatures(TaggerImpl *tagger) const;	-
+//bool applyRule(string_buffer *os,	const char *pattern, size_t pos, const TaggerImpl &tagger) const;	-	extract feature at a node
 class FeatureIndex {
  public:
   static const unsigned int version = MODEL_VERSION;
@@ -78,7 +76,9 @@ class FeatureIndex {
   void set_cost_factor(double cost_factor) { cost_factor_ = cost_factor; }
   double cost_factor() const { return cost_factor_; }
 
+  // uni-gram feature function
   void calcCost(Node *node) const;
+  // bi-gram feature function
   void calcCost(Path *path) const;
 
   bool buildFeatures(TaggerImpl *tagger) const;

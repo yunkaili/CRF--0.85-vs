@@ -18,7 +18,7 @@
 
 namespace CRFPP {
 // log(exp(x) + exp(y));
-//    this can be used recursivly
+//    this can be used recursively
 // e.g., log(exp(log(exp(x) + exp(y))) + exp(z)) =
 // log(exp (x) + exp(y) + exp(z))
 inline double logsumexp(double x, double y, bool flg) {
@@ -35,16 +35,16 @@ inline double logsumexp(double x, double y, bool flg) {
 struct Path;
 
 struct Node {
-  unsigned int         x;	// feature_idx
-  unsigned short int   y;	// label_idx
+  unsigned int         x;		// feature_idx
+  unsigned short int   y;		// label_idx
   double               alpha;	
   double               beta;
   double               cost;
   double               bestCost;
   Node                *prev;
   const int           *fvector;
-  std::vector<Path *>  lpath;
-  std::vector<Path *>  rpath;
+  std::vector<Path *>  lpath;	// list of left path
+  std::vector<Path *>  rpath;	// list of right path
 
   void calcAlpha();
   void calcBeta();
